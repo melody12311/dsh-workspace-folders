@@ -24,7 +24,13 @@ DSH 的一个会话只有一个工作区目录，文件沙箱只允许写入这�
 ## 安装
 
 ```sh
-dsh plugin --profile <profile> add dsh-workspace-folders
+dsh plugin --profile <profile> add github:melody12311/dsh-workspace-folders
+```
+
+或从 release 里的 tgz 安装：
+
+```sh
+dsh plugin --profile <profile> add "https://github.com/melody12311/dsh-workspace-folders/releases/download/v0.1.0/dsh-workspace-folders-0.1.0.tgz"
 ```
 
 也可以在 dshmarket 里搜索安装；本地目录安装等价于 `plugin_manager` 的 `install_bundle`。
