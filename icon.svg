@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Multi-folder workspace">
+  <title>Multi-folder workspace</title>
+  <g fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M6 24h22l5 6h25v22a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z"/>
+    <path d="M6 24V12a4 4 0 0 1 4-4h12l5 6h13"/>
+    <path d="M38 8h16a4 4 0 0 1 4 4v18"/>
+  </g>
+  <circle cx="47" cy="45" r="3" fill="currentColor"/>
+</svg>

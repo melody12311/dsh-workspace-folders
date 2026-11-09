@@ -1,0 +1,56 @@
+{
+  "name": "dsh-workspace-folders",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "多文件夹工作区 / Multi-folder workspaces for DeepSeekRuntime: extra folders become real workspace roots — the session lists them, the workspace_roots tool scans them, and file tools read, write and patch inside them without approval prompts. Editable from the sidebar or Settings.",
+  "icon": "icon.svg",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "icon.svg",
+    "test/selftest.mjs"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "workspace",
+    "multi-root",
+    "multi-folder",
+    "monorepo",
+    "sandbox",
+    "writable-roots"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node test/selftest.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+# Build artefacts
+dist/
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Local scratch
+*.tgz
+*.log
+.DS_Store
+Thumbs.db

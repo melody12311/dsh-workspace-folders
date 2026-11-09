@@ -1,0 +1,8 @@
+# dsh-workspace-folders bundle layer.
+#
+# Mounts the Host half (index.js, the package root export) which owns the folder
+# list, widens `ctx.sandboxPolicy` per call, and serves the routes the Web UI
+# talks to. The browser half (client.js) registers the settings page.
+- insert:
+    - id: workspace-folders
+      name: 'dsh-workspace-folders'
