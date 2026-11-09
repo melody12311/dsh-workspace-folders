@@ -33,6 +33,15 @@
   "engines": {
     "node": ">=22"
   },
+  "author": "melody12311",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melody12311/dsh-workspace-folders.git"
+  },
+  "homepage": "https://github.com/melody12311/dsh-workspace-folders#readme",
+  "bugs": {
+    "url": "https://github.com/melody12311/dsh-workspace-folders/issues"
+  },
   "scripts": {
     "test": "node test/selftest.mjs"
   },
